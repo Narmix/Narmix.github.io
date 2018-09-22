@@ -1,0 +1,72 @@
+html {
+	height: 100%;
+}
+
+
+body {
+	background-image: url("https://i.imgur.com/TaJdROt.jpg");
+	height: 100%;
+	background-color: linen;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: 'Raleway', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+.banner h1{
+	font-weight: bold;
+	text-shadow: 5px 5px 8px rgb(55, 0, 55);
+	font-weight: bold;
+}
+
+
+.welcome {
+	position: absolute;
+	top: 70%;
+	display: inline-block;
+	width: 100%;
+}
+
+.banner {
+	position: relative;
+	background-color: rgba(20, 20, 20, .25);	
+	color: linen;
+	padding: 20px;
+	width: 100%;
+	animation: fadein 1s 1s forwards;
+	opacity: 0;
+}
+
+.morebutton {
+	position: relative;
+	left: 150px;
+	color: white;
+	font-size: 20px;
+	background-color: rgba(55, 0, 55, .33);
+	padding: 5px;
+	transition: background .3s;
+	border-radius: 10px;
+	text-decoration: none;
+	animation: fadein 1s 2s forwards;
+	opacity: 0;
+}
+
+.morebutton:hover {
+	background: rgba(102, 0, 102, 1);
+	color: white;
+}
+
+.morebutton:active {
+	text-decoration: none;
+}
+
+.morebutton:visted {
+	text-decoration: none;
+}
+
+@keyframes fadein {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
